@@ -4,10 +4,38 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>Accessible Portfolio</title>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<header role="heading" aria-level="1">
+		<h1>My accessible Portfolio</h1>
+	</header>
+	<nav role="navigation">
+		<ul>
+			<li><a href="#about" role="listitem">About me</a></li>
+			<li><a href="#projects" role="listitem">Project</a></li>
+			<li><a href="#contact" role="listitem">Contact</a></li>
+		</ul>
+	</nav>
+	<section id="about" role="region" aria-labelledby="aboutHeading">
+		<h2 id="aboutHeading" role="heading" aria-level="2">About Me</h2>
+		<img src="https://cdn.pixabay.com/photo/2014/03/25/16/24/female-296990_640.png" alt="My Profile Picture" role="img">
+		<p>Hi, I am Sweta Patel, a passionate Web developer with a focus on accessibility.</p>
+	</section>
+	<section id="projects" role="region" aria-labelledby="projectsHeading">
+		<h2 id="projectsHeading" role="heading" aria-level="2">Projects</h2>
+		<ul role="list">
+			<li role="listitem">Project 1: ToDo List</li>
+			<li role="listitem">Project 2: CRUD Operation</li>
+			<li role="listitem">Project 3: ReactJs ToDo List</li>
+		</ul>
+	</section>
+	<section id="contact" role="region" aria-labelledby="contactHeading">
+		<h2 id="contactHeading" role="heading" aria-level="2">Contact</h2>
+		<p>Feel free to contact me at ghjtk@gmail.com</p>
+	</section>
     <script type="text/javascript" src="./script.js">
 </script>
 
